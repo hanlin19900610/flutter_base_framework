@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
-
-* TODO: Describe initial release.
+# 更新日志
+## [0.0.1] - init commit
+* 第一次提交
