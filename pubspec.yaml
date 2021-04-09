@@ -1,8 +1,7 @@
 name: flutter_base_framework
 description: A new Flutter package.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/hanlin19900610/flutter_base_framework.git
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
