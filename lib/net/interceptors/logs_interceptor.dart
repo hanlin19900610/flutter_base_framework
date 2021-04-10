@@ -8,14 +8,14 @@ class LogsInterceptors extends InterceptorsWrapper {
   onRequest(RequestOptions options, RequestInterceptorHandler handler,) async {
     LogUtil.e("****************onRequest() start*******************", tag: _tag);
     LogUtil.e('url：${options.baseUrl + options.path}', tag: _tag, );
-    LogUtil.e('headers: ${json.encode(options.headers ?? {})}', tag: _tag, );
+    LogUtil.e('headers: ${json.encode(options.headers)}', tag: _tag, );
     LogUtil.e('method: ${options.method}', tag: _tag, );
-    LogUtil.e('responseType: ${options.responseType?.toString()}', tag: _tag, );
+    LogUtil.e('responseType: ${options.responseType.toString()}', tag: _tag, );
     LogUtil.e('followRedirects: ${options.followRedirects}', tag: _tag, );
     LogUtil.e('connectTimeout: ${options.connectTimeout}', tag: _tag, );
     LogUtil.e('receiveTimeout: ${options.receiveTimeout}', tag: _tag, );
-    LogUtil.e('extra: ${json.encode(options.extra ?? {})}', tag: _tag, );
-    LogUtil.e('queryParameters: ${json.encode(options.queryParameters ?? {})}', tag: _tag, );
+    LogUtil.e('extra: ${json.encode(options.extra)}', tag: _tag, );
+    LogUtil.e('queryParameters: ${json.encode(options.queryParameters)}', tag: _tag, );
     LogUtil.e('params: ${json.encode(options.data ?? {})}', tag: _tag, );
     LogUtil.e("****************onRequest() end*********************", tag: _tag, );
     handler.next(options);
@@ -30,12 +30,12 @@ class LogsInterceptors extends InterceptorsWrapper {
   }
 
   void _printResponse(Response response) {
-    LogUtil.e( 'url: ${response.requestOptions?.path}', tag: _tag,);
+    LogUtil.e( 'url: ${response.requestOptions.path}', tag: _tag,);
     LogUtil.e( 'statusCode: ${response.statusCode}', tag: _tag,);
     if (response.isRedirect == true) {
       LogUtil.e( 'redirect: ${response.realUri}', tag: _tag,);
     }
-    LogUtil.e( 'response headers: ${response.headers?.toString()}', tag: _tag,);
+    LogUtil.e( 'response headers: ${response.headers.toString()}', tag: _tag,);
     LogUtil.e( 'Response Text: ${response.toString()}', tag: _tag,);
   }
 
