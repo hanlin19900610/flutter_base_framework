@@ -1,5 +1,3 @@
-export 'skeleton/skeleton_rect.dart';
-export 'skeleton/base_skeleton_widget.dart';
 export 'animation_dialog.dart';
 export 'customer_checkbox.dart';
 export 'dotted_line.dart';

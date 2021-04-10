@@ -40,8 +40,6 @@ dependencies:
   device_info: ^2.0.0
   # https://pub.flutter-io.cn/packages/package_info
   package_info: ^2.0.0
-  # 谁用谁闪亮 (骨架屏) https://pub.flutter-io.cn/packages/shimmer
-  shimmer: ^2.0.0-nullsafety.0
   # https://pub.flutter-io.cn/packages/url_launcher
   url_launcher: ^6.0.3 #启动第三方app
   # https://pub.flutter-io.cn/packages/permission_handler
@@ -50,8 +48,6 @@ dependencies:
   flutter_image_compress: ^1.0.0
   # https://pub.flutter-io.cn/packages/webview_flutter
   webview_flutter: ^2.0.2
-  # https://pub.flutter-io.cn/packages/flutter_html
-  flutter_html: ^2.0.0-nullsafety.0
   # https://pub.flutter-io.cn/packages/extended_image
   extended_image: ^4.0.1
 
