@@ -4,6 +4,7 @@ export 'config/index.dart';
 export 'net/index.dart';
 export 'utils/index.dart';
 export 'widgets/index.dart';
+export 'providers/index.dart';
 
 export 'package:date_format/date_format.dart';
 export 'package:dio/dio.dart';
